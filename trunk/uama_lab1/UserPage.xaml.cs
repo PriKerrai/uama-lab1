@@ -13,20 +13,14 @@ using Microsoft.Phone.Controls;
 
 namespace uama_lab1
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class UserPage : PhoneApplicationPage
     {
-        // Constructor
-        public MainPage()
+        public UserPage()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e)
         {
 
         }
