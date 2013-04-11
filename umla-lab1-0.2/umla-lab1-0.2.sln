@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "umla-lab1-0.2.Web", "umla-lab1-0.2\umla-lab1-0.2.Web\umla-lab1-0.2.Web.csproj", "{C35AA39F-D674-41D6-9404-651913D58D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "umla-lab1-0.2.Phone", "umla-lab1-0.2\umla-lab1-0.2.Phone\umla-lab1-0.2.Phone.csproj", "{BAB649DC-B891-489E-B849-6BF9DF2F78F0}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "umla-lab1-0.2", "umla-lab1-0.2\umla-lab1-0.2\umla-lab1-0.2.ccproj", "{71897CC4-E761-4164-B921-36A7CF942EFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C35AA39F-D674-41D6-9404-651913D58D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35AA39F-D674-41D6-9404-651913D58D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35AA39F-D674-41D6-9404-651913D58D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35AA39F-D674-41D6-9404-651913D58D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB649DC-B891-489E-B849-6BF9DF2F78F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAB649DC-B891-489E-B849-6BF9DF2F78F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB649DC-B891-489E-B849-6BF9DF2F78F0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BAB649DC-B891-489E-B849-6BF9DF2F78F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAB649DC-B891-489E-B849-6BF9DF2F78F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB649DC-B891-489E-B849-6BF9DF2F78F0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{71897CC4-E761-4164-B921-36A7CF942EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71897CC4-E761-4164-B921-36A7CF942EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71897CC4-E761-4164-B921-36A7CF942EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71897CC4-E761-4164-B921-36A7CF942EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

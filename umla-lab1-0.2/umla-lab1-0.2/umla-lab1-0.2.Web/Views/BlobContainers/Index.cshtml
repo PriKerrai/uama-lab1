@@ -1,0 +1,56 @@
+﻿@using umla_lab1_0._2.Web.Models
+@model IEnumerable<StorageItemPermissionsModel>
+
+@{
+    ViewBag.Title = "Manage Blob Containers Permissions";
+}
+<h2>
+    Manage Blob Containers Permissions</h2>
+<p>
+    Select which users can access each blob container.
+</p>
+@{ var users = this.ViewBag.users as IEnumerable<UserModel>; }
+@foreach (var item in this.Model)
+{
+    <div class="storage-heading">
+        <div class="public-permissions">
+            <input type="hidden" id="Public_@(item.StorageItemName)" value="@(item.IsPublic ? "true" : "false")" />
+            <div class="access-title">
+                <span>Blob Container Access: </span><span class="access-value @(!item.IsPublic ? "hidden" : "")" id="Public_@(item.StorageItemName)_Public">
+                    Public</span> <span class="access-value @(item.IsPublic ? "hidden" : "")" id="Public_@(item.StorageItemName)_Private">
+                        Private</span>
+            </div>
+            &nbsp;&nbsp;
+            <div class="access-action">
+                (<a onclick="SetPublic('@(item.StorageItemName)', publicActionUrl)"> <span id="Public_@(item.StorageItemName)_SetPublic" class="@(item.IsPublic ? "hidden" : "")">
+                    Set Public</span> <span id="Public_@(item.StorageItemName)_SetPrivate" class="@(!item.IsPublic ? "hidden" : "")">
+                        Set Private</span> </a>)
+            </div>
+        </div>
+        <p class="storage-title">
+            Blob Container: <span>@item.StorageItemName</span></p>
+    </div>                    
+    <fieldset class="group">
+        <legend></legend>
+        @foreach (var user in users)
+        {
+            var containerId = Guid.NewGuid();
+            var blobContainerChecked = item.AllowedUserIds.Contains(user.UserId) ? "checked=\"checked\"" : string.Empty;
+            var blobContainerEnabled = item.IsPublic ? "disabled=\"disabled\"" : string.Empty;
+            
+            <div class="user">
+                <input id="@(item.StorageItemName)_@(containerId)" name="@(item.StorageItemName)_@(containerId)" onclick="SetPermission('@(containerId)', '@(user.UserId)', '@(item.StorageItemName)', addBlobContainerPermissionActionUrl, removeBlobContainerPermissionActionUrl)"
+                            type="checkbox" @this.Html.Raw(blobContainerChecked) @this.Html.Raw(blobContainerEnabled) />
+                <label for="@(item.StorageItemName)_@(containerId)">
+                    @user.UserName</label>
+            </div>
+        }
+    </fieldset>
+}
+<script type="text/javascript">
+//<![CDATA[
+    var publicActionUrl = '@this.Html.Raw(this.Url.Action("SetBlobContainerPublic", new { blobContainer = "_storage_", isPublic = "_isPublic_" }))';
+    var addBlobContainerPermissionActionUrl = '@this.Html.Raw(this.Url.Action("AddBlobContainerPermission", new { blobContainer = "_storage_", userId = "_user_" }))';
+    var removeBlobContainerPermissionActionUrl = '@this.Html.Raw(this.Url.Action("RemoveBlobContainerPermission", new { blobContainer = "_storage_", userId = "_user_" }))';
+//]]>
+</script>
