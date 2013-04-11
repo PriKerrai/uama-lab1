@@ -28,9 +28,15 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,6,0,0" Name="fromCityTextBlock" Text="From city" VerticalAlignment="Top" Width="438" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,100,0,0" Name="toCityTextBlock" Text="To city" VerticalAlignment="Top" Width="438" FontWeight="Normal" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,6,0,0" Name="addCityTextBlock" Text="Add city to be visited" VerticalAlignment="Top" Width="438" />
+            <ListBox Height="242" HorizontalAlignment="Left" Margin="12,42,0,0" Name="allCitiesListBox" VerticalAlignment="Top" Width="438" />
+            
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,290,0,0" Name="citiesToVisitTextBlock" Text="Cites to visit" VerticalAlignment="Top" Width="438" FontWeight="Normal" />
+            <ListBox Height="207" HorizontalAlignment="Left" Margin="12,326,0,0" Name="citiesToVisitListBox" VerticalAlignment="Top" Width="438" />
+            
             <Button Content="Create calculation" Height="72" HorizontalAlignment="Left" Margin="12,539,0,0" Name="createNewCalculationButton" VerticalAlignment="Top" Width="438" />
+            
+            
         </Grid>
     </Grid>
  
