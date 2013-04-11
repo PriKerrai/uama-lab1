@@ -32,10 +32,10 @@
             <TextBox Height="81" HorizontalAlignment="Left" Margin="12,28,0,0" Name="nameBox" Text="" VerticalAlignment="Top" Width="438" />
 
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,115,0,0" Name="passwordBlock" Text="Password" VerticalAlignment="Top" Width="438" />
-            <TextBox Height="81" HorizontalAlignment="Left" Margin="12,137,0,0" Name="passwordBox" Text="" VerticalAlignment="Top" Width="438" TextChanged="textBox2_TextChanged" />
+            <TextBox Height="81" HorizontalAlignment="Left" Margin="12,137,0,0" Name="passwordBox" Text="" VerticalAlignment="Top" Width="438" />
             
             <Button Content="New user" Height="72" HorizontalAlignment="Right" Margin="0,224,6,0" Name="newUser" VerticalAlignment="Top" Width="221" />
-            <Button Content="Log in" Height="72" HorizontalAlignment="Left" Margin="12,224,0,0" Name="logIn" VerticalAlignment="Top" Width="221" />
+            <Button Content="Log in" Height="72" HorizontalAlignment="Left" Margin="12,224,0,0" Name="logIn" VerticalAlignment="Top" Width="221" Click="logIn_Click" />
         </Grid>
     </Grid>
  

@@ -20,5 +20,11 @@ namespace uama_lab1
         {
             InitializeComponent();
         }
+
+        private void logIn_Click(object sender, RoutedEventArgs e)
+        {
+            // Verify user and if true navigate to UserPage...
+            NavigationService.Navigate(new Uri("/UserPage.xaml", UriKind.Relative));
+        }
     }
 }
