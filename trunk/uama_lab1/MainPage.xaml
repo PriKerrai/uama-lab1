@@ -34,8 +34,8 @@
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,115,0,0" Name="passwordBlock" Text="Password" VerticalAlignment="Top" Width="438" />
             <TextBox Height="81" HorizontalAlignment="Left" Margin="12,137,0,0" Name="passwordBox" Text="" VerticalAlignment="Top" Width="438" TextChanged="textBox2_TextChanged" />
             
-            <Button Content="Register new user" Height="72" HorizontalAlignment="Left" Margin="167,224,0,0" Name="newUser" VerticalAlignment="Top" Width="283" />
-            <Button Content="Log in" Height="72" HorizontalAlignment="Left" Margin="12,224,0,0" Name="logIn" VerticalAlignment="Top" Width="149" Click="button2_Click" />
+            <Button Content="New user" Height="72" HorizontalAlignment="Right" Margin="0,224,6,0" Name="newUser" VerticalAlignment="Top" Width="221" />
+            <Button Content="Log in" Height="72" HorizontalAlignment="Left" Margin="12,224,0,0" Name="logIn" VerticalAlignment="Top" Width="221" />
         </Grid>
     </Grid>
  

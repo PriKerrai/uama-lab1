@@ -20,15 +20,5 @@ namespace uama_lab1
         {
             InitializeComponent();
         }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }
