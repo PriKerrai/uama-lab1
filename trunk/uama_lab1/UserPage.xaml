@@ -34,7 +34,7 @@
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,78,0,0" Name="calculationsTextBlock" Text="Calculations" VerticalAlignment="Top" Width="438" />
             <ListBox Height="410" HorizontalAlignment="Left" Margin="12,113,0,0" Name="calculationsListBox" VerticalAlignment="Top" Width="438" />
             
-            <Button Content="New calculation" Height="72" HorizontalAlignment="Left" Margin="12,529,0,0" Name="newCalculationButton" VerticalAlignment="Top" Width="438" />
+            <Button Content="New calculation" Height="72" HorizontalAlignment="Left" Margin="12,529,0,0" Name="newCalculationButton" VerticalAlignment="Top" Width="438" Click="newCalculationButton_Click" />
         </Grid>
     </Grid>
  

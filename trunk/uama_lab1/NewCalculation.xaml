@@ -34,9 +34,7 @@
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,290,0,0" Name="citiesToVisitTextBlock" Text="Cites to visit" VerticalAlignment="Top" Width="438" FontWeight="Normal" />
             <ListBox Height="207" HorizontalAlignment="Left" Margin="12,326,0,0" Name="citiesToVisitListBox" VerticalAlignment="Top" Width="438" />
             
-            <Button Content="Create calculation" Height="72" HorizontalAlignment="Left" Margin="12,539,0,0" Name="createNewCalculationButton" VerticalAlignment="Top" Width="438" />
-            
-            
+            <Button Content="Create calculation" Height="72" HorizontalAlignment="Left" Margin="12,539,0,0" Name="createNewCalculationButton" VerticalAlignment="Top" Width="438" Click="createNewCalculationButton_Click" />
         </Grid>
     </Grid>
  

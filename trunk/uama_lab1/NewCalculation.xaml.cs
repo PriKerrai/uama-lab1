@@ -19,5 +19,10 @@ namespace uama_lab1
         {
             InitializeComponent();
         }
+
+        private void createNewCalculationButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

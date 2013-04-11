@@ -20,9 +20,9 @@ namespace uama_lab1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void newCalculationButton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/NewCalculation.xaml", UriKind.Relative));
         }
     }
 }
